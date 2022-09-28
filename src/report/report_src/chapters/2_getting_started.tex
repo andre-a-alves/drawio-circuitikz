@@ -1,0 +1,37 @@
+% first example chapter
+% @author Andre Alves
+%
+\chapter{Getting Started}\label{ch:getting-started}
+Running the current webapp does not require installation, but it does require a functioning webserver.
+Based on the advice from~\ref{subsec:intellij}, we recommend using IntelliJ's built-in web server.
+
+\section{Prerequisites}\label{sec:prerequisites}
+The following prerequisites are outside the scope of this section, but are necessary to follow our instructions on getting started.
+\begin{itemize}
+    \item A valid GitHub account.
+    \item Git installed on your computer.
+    \item Either GitHub Desktop installed or familiarity with using Git from the command line.
+    \item An IDE that supports Apache Ant.
+        We recommend \href{https://www.jetbrains.com/idea/download/}{IntelliJ IDEA Ultimate}.
+\end{itemize}
+
+\section{Steps}\label{sec:getting-started-steps}
+While there are multiple ways to get started, this is our recommended approach.
+\begin{enumerate}
+    \item Fork the repository for the project (\href{https://github.com/andre-a-alves/drawio-circuitikz}{https://github.com/andre-a-alves/drawio-circuitikz}) so you are the project owner.
+    \item Clone your new fork onto your local machine.
+    \item Open the project in IntelliJ IDEA Ultimate.
+    \item Within the project, right click \texttt{etc/build/build.xml} and click \texttt{Add as Ant Build File}.
+\end{enumerate}
+
+You will now see an Ant toolbar on the right hand side of IntelliJ.
+By clicking that toolbar, you will see various build options.
+By selecting \texttt{all} and clicking the green ``play'' arrow, you will be able to transpile your current source code into minimized javascript that can be run on a local server.
+
+\section{Running the Webapp}\label{sec:running-the-webapp}
+After following the above steps, to run the webapp, simple right click on \\\texttt{src/main/webapp/index.html} and select ``Run index.html.''
+This will launch a local webserver that hosts the current site.
+
+\section{Deploying the Webapp}\label{sec:deploying-the-webapp}
+This project ended at webapp development.
+Deploying the completed webapp is another topic remaining to be solved.
